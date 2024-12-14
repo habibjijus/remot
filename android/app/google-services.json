@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "557994569761",
+    "firebase_url": "https://remotcoba-6efcf-default-rtdb.firebaseio.com",
+    "project_id": "remotcoba-6efcf",
+    "storage_bucket": "remotcoba-6efcf.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:557994569761:android:e8bd3ad5666e784a7bb360",
+        "android_client_info": {
+          "package_name": "com.example.remotko"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAKRecdW3pb57ma_89UvYlmOU_yxhRhtCg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

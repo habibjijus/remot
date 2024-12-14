@@ -1,0 +1,44 @@
+plugins {
+    id "com.android.application"
+    id "org.jetbrains.kotlin.android"
+    id "dev.flutter.flutter-gradle-plugin"  // Plugin Flutter harus diterapkan setelah plugin Android dan Kotlin
+    id 'com.google.gms.google-services'  // Plugin untuk Google Services (Firebase)
+}
+
+android {
+    namespace = "com.example.remotkontrol"
+    compileSdk = 34  // Pastikan menggunakan SDK versi yang sesuai
+    ndkVersion = "21.4.7075529"  // Pastikan NDK sesuai dengan versi Flutter Anda
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = JavaVersion.VERSION_1_8
+    }
+
+    defaultConfig {
+        applicationId = "com.example.remotko"
+        minSdk = 21  // Sesuaikan dengan minimum SDK yang Anda inginkan
+        targetSdk = 33  // Target SDK yang digunakan
+        versionCode = 1  // Set sesuai dengan versi aplikasi Anda
+        versionName = "1.0.0"  // Set sesuai dengan nama versi aplikasi Anda
+    }
+
+    buildTypes {
+        release {
+            signingConfig = signingConfigs.debug  // Menggunakan debug keystore untuk sementara waktu
+        }
+    }
+}
+
+flutter {
+    source = "../.."  // Path ke project Flutter
+}
+
+dependencies {
+    implementation platform('com.google.firebase:firebase-bom:33.5.1')  // Menambahkan platform BOM Firebase
+    implementation 'com.google.firebase:firebase-analytics'  // Menambahkan dependensi Firebase Analytics
+}

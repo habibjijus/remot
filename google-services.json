@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "531963103813",
+    "project_id": "remot-799a9",
+    "storage_bucket": "remot-799a9.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:531963103813:android:798fd15a11750ebd1fb12c",
+        "android_client_info": {
+          "package_name": "com.example.remotkontrol"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC3X8_mJ105O1t7CXqmO5jTwqYRiU16_bc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
